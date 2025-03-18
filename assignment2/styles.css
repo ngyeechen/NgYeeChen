@@ -1,0 +1,90 @@
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Add in your own customisations */
+h1{
+    color: #f2f2f2;
+
+    background-color: rgb(94, 164, 211);
+    display: block; /* Ensures it behaves like a full-width block */
+    width: 100%; /* Fills the container width */
+    text-align: center; /* Centers the text */
+    padding: 20px; /* Adds space inside */
+  }
+
+.img-container{
+    background-color: rgb(94, 164, 211);
+    width: 100%; /* Fills the container width */
+    padding: 20px; /* Adds space inside */
+  }
+  
+.img-container img {
+    background-color: rgb(94, 164, 211);
+    display: block; /* Ensures it behaves like a full-width block */
+    max-width: 300px;
+    width: auto; /* Maintains aspect ratio */
+    height: auto; /* Prevents distortion */
+    width: 100%; /* Fills the container width */
+    padding: 20px; /* Adds space inside */
+    margin: 0 auto; /* Centers the image horizontally */
+  }
+
+table {
+    width: 100%; /* Ensures table fits nicely */
+    border-collapse: collapse; /* Removes double borders */
+    table-layout: fixed; /* Distributes columns evenly */
+    border: 1px solid rgb(204, 203, 203); /* if we don't put this then a weird portion of the border is not same colour */
+
+}
+
+th, td {
+    border: 1px solid rgb(204, 203, 203); /* Keeps borders visible */
+    padding: 10px; /* Adds spacing */
+    text-align: center; /* Centers text */
+    width: 33.33%; /* Ensures equal column width */
+}
+
+ul{
+    color: rgb(56, 144, 202);
+
+    list-style-type: disc;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+ul li::marker {
+    color: black; /* Sets the bullet color to black */
+}
+
+ul li a {
+    text-decoration: none; /* Removes the underline from links */
+    color: rgb(56, 144, 202); 
+}
+
+ul li a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover if desired */
+}
+
+footer {
+    color: #f2f2f2;
+
+    background-color: rgb(94, 164, 211);
+    display: block; /* Ensures it behaves like a full-width block */
+    width: 100%; /* Fills the container width */
+    text-align: center; /* Centers the text */
+    padding: 10px; /* Adds space inside */
+}
