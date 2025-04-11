@@ -61,8 +61,19 @@ p.then(value => {
   }).finally(() => {
     console.log(" "); //????. seems like I can also don't console.log() anything here.
   });
-*/
 
+//But if p rejects in the future, it would skip that .then() — and the "Promise settled" message wouldn’t show.
+//so this should be the correct answer for Q6:
+const p = Promise.resolve(42);
+
+p.then(value => {
+    console.log("Promise settled");
+  }).catch(error => {
+    console.log("Caught error:", error); 
+  }).finally(() => {
+    console.log("Promise settled"); 
+  });
+*/
 
 //Question 7:
 // Your code here
@@ -129,4 +140,17 @@ function getHelloWorld() {
 // Test the function
 getHelloWorld().then((value) => {
     console.log(value); 
+});
+
+//this should be the correct answer:
+const p = Promise.resolve('World');
+
+p.then((value) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Hello ' + value);
+        }, 1000);
+    });
+}).then((finalValue) => {
+    console.log(finalValue); // "Hello World" after 1 second
 });
