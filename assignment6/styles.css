@@ -1,0 +1,78 @@
+/* styles.css */
+
+/* BlogPost styles */
+.blog-post {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.blog-post.featured {
+  background-color: #f0f0f0;
+}
+
+.blog-post h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.blog-post .meta {
+  font-style: italic;
+  color: #888;
+}
+
+/* BlogList styles */
+.blog-list {
+  margin-top: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
+
+/* FeaturedPostSection styles */
+.private-posts {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.private-posts h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.private-posts .meta {
+  font-style: italic;
+  color: #888;
+}
+
+/* App styles */
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
